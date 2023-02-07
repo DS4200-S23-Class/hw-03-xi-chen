@@ -13,8 +13,179 @@
 
 
 <body>
+<div class="row">
+    <div class="column" id='col1'>
+        <br><div class="flex-container1">
+            <div id='img'> 
+                <img src=img\vis1.png>
+            </div>
+        </div>
+        <br><div class="flex-container2">
+            <div id='img'> 
+                <img src=img\vis2.png>
+            </div>
+        </div>
+        <br><div class="flex-container3">
+            <div id='img'> 
+                <img src=img\vis3.png>
+            </div>
+        </div>
+    </div>
+    <div class="column" id='col2'>
+        <div class="flex-container4">
+            <br><div id='text' align='justify'>
+                <br><h2 class='vis1'> Marks:</h2>
+                <ul>
+                    <li> Mark1: Area, there are distinct area for different states</li>
+                    <li> Mark2: Area, there is an area to show electoral votes needed to win</li>
+                    <li> Mark3: Area, there are areas show Nebraska's electoral votes and Maine's 4 electoral votes</li>
+                </ul>
+                <br><h2 class='vis1'> Channels:</h2>
+                <ul>
+                    <li> Channel1 (identity): 
+                        <ul>
+                            <li>
+                            Shape (categorical attribute), different shapes show geographic shape of different states
+                            </li>
+                            <li>I think it is a good choice because users are able to see the state that different part represents
+                            </li>
+                        </ul>
+                    </li>
+                    <li> Channel2 (identity): 
+                        <ul>
+                            <li>
+                            Color hue (categorical attribute): blue represents supporter of Clinton, red represents supporter of Trump
+                            </li>
+                            <li> I think this is a good choice because red and blue are consiously preceived as colors of two opponents. Clinton and Trump were trying to beat each other in the election so that the colors match the senario.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> Channel3 (magnitude)
+                        <ul> 
+                            <li>Position on common scale (ordered): proportion of supporters between Clintion and Trump is presented horizontally.
+                            </li>
+                            <li>I think it is a good choice because users can easily see whether Clinton or Trump is leading the election.
+                            </li>
+                        </ul>
 
-
+                    </li>
+                </ul>
+                <br><h2 class='vis1'> ColorMap(s):</h2>
+                <ul>
+                    <li> Corlormap1 (identity): </li>
+                    <ul>
+                        <li>Categorical attribute, red and blue are distinct
+                        </li>
+                        <li> I think it is a great choice because Clinton and Trump are opposite in this senario so using two different opposite colors is a great choice
+                        </li>
+                    </ul>
+                </ul>
+            <br>
+            </div>
+        </div>
+        <div class="flex-container5">
+            <div id='text'>
+                <br><h2 class='vis2'> Marks:</h2>
+                <ul>
+                    <li> Mark1: points, which represents batted balls
+                    </li>
+                    <li> Mark2: lines, which are dotted and divide points into pop-ups, fly balls, line drives and ground balls
+                    </li>
+                    <li> Mark3: area, showing a scoring value falls below or above average LWTS
+                    </li>
+                </ul>
+                <br><h2 class='vis2'> Channels:</h2>
+                <ul>
+                    <li> Channel1 (magnitude)
+                        <ul> 
+                            <li> Position on common scale (ordered attribute), both, where y-aixs is launch angle and x-axis is exit velocity
+                            </li>
+                            <li> I think it is a good way to show that this plot is focusing on launch angle and exit velocity. Users can also see different unit and x ticks for those two axis.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> Channel2 (identity)
+                        <ul> 
+                            <li> Color hue (categorical attribute), shows how close the scoring value of batted ball to average scoring value
+                            </li>
+                            <li> I think purple and orange are smart choice because they are disguishable.</li>
+                        </ul>
+                    </li>
+                    <li> Channel 3 (Magnitude)
+                        <ul>
+                            <li> Color saturation (ordered attribute), as scoring value gets closer to average, color shift to white.
+                            </li>
+                            <li> I think it is a good choice because it helps users to identify how close the data point to the average
+                            </li>
+                        </ul>
+                </ul>
+                <br><h2 class='vis2'> ColorMap(s):</h2>
+                <ul>
+                    <li> ColorMap1 (Magnitude)
+                        <ul> 
+                            <li> Divergent (ordered attribute), two extreme are purple and organge. As data point approach the average, its color getting lighter. When data point reaches the average, it becomes white. </li>
+                            <li> I think it is a great choice because users can clearly understand the data point is above or below the average. Also, since the background of plot is not white so that users can also understand if a data point is near to average.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            <br>
+            <br>
+            <br>
+            </div>
+        </div>
+        <br>
+        <br><div class="flex-container6">
+            <br><div id='text'>
+                <br><h2 class='vis3'> Marks:</h2>
+                <ul>
+                    <li> Mark1: points, which represents history price for Cristiano Ronaldo at different time
+                    </li>
+                    <li> Mark2: lines, represents predicted price for Cristiano Ronaldo
+                    </li>
+                </ul>
+                <br><h2 class='vis2'> Channels:</h2>
+                <ul>
+                    <li> Channel1 (Magnitude)
+                        <ul> 
+                            <li> Position on common scale (ordered attribute), both, where y-aixs is price and x-axis is date
+                            </li>
+                            <li> I think showing price and date are great but date are converted and difficult to understand by user. For instance, users might not know what 85 stands for.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> Channel2 (identity)
+                        <ul> 
+                            <li> Color hue (categorical attribute), shows difference between oberseved and predicted price
+                            </li>
+                            <li> I think it is a good choice to use blue on observed price and red on predicted price because users shuold focus more on predicted price.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br><h2 class='vis2'> ColorMap(s):</h2>
+                <ul>
+                    <li> ColorMap1 (identity)
+                        <ul> 
+                            <li> Categorical attribute, only red and blue</li>
+                            <li> I think it is a great choice to use red to represent predicted value and blue to represent observed value. Blue grabs less attention on human eyes and red does more. I want users to look at the predicted price.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 id='acknowledgements' align='center'>Acknowledgements</h2>
+<div>
+     <ul>
+        <li> https://www.w3schools.com/html/html_lists.asp </li>
+        <li> https://www.w3schools.com/html/html_scripts.asp </li>
+        <li> https://www.w3schools.com/html/html_links.asp </li>
+        <li>  https://fivethirtyeight.com/features/the-52-best-and-weirdest-charts-we-made-in-2016/ </li>
+    </ul>
+</div>
 </body>
 
 </html>
