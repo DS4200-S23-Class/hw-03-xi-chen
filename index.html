@@ -11,7 +11,22 @@
 <h1> hw-03: Interactive Webpage, and Marks & Channels</h1>
 </head>
 
+<!-- the first button-->
+<div>
 
+    <button type="button" onClick="ScrollToBottom(
+    )"> click me! </button>
+
+    <div id="button-div-top" class="gen">
+        Scroll to bottom!
+    </div>
+
+</div> 
+
+<!-- Link the javascript file to function the html-->
+<script src="main.js"></script>
+
+<!-- Body of html-->
 <body>
 <div class="row">
     <div class="column" id='col1'>
@@ -178,7 +193,7 @@
     </div>
 </div>
 <h2 id='acknowledgements' align='center'>Acknowledgements</h2>
-<div>
+<div id='acknowledgements'>
      <ul>
         <li> https://www.w3schools.com/html/html_lists.asp </li>
         <li> https://www.w3schools.com/html/html_scripts.asp </li>
@@ -187,5 +202,16 @@
     </ul>
 </div>
 </body>
+
+<div>
+
+    <button type="button" onClick="ScrollToTop(
+    )"> click me! </button>
+
+    <div id="button-div-bottom" class="gen">
+        Scroll to top!
+    </div>
+
+</div>
 
 </html>
