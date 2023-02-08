@@ -11,7 +11,7 @@
 <h1> hw-03: Interactive Webpage, and Marks & Channels</h1>
 </head>
 
-<!-- the first button-->
+<!-- the first button, scroll to the bottom-->
 <div>
 
     <button type="button" onClick="ScrollToBottom(
@@ -29,6 +29,8 @@
 <!-- Body of html-->
 <body>
 <div class="row">
+
+    <!-- left column, contains visualizations-->
     <div class="column" id='col1'>
         <div class="flex-container1">
             <div id='img'> 
@@ -46,9 +48,12 @@
             </div>
         </div>
     </div>
+
+    <!-- right column, contains marks, channels and colormap(s)-->
     <div class="column" id='col2'>
         <div class="flex-container4">
             <div id='text' align='justify'>
+                
                 <h2 class='vis1'> Marks:</h2>
                 <ul>
                     <li> Mark1: Area, there are distinct area for different states</li>
@@ -203,6 +208,7 @@
 </div>
 </body>
 
+<!-- second button, scroll to the top-->
 <div>
 
     <button type="button" onClick="ScrollToTop(

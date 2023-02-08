@@ -1,9 +1,21 @@
 style.css
 
-body { font-family: 'Arial';	
+body { 
+	font-family: 'Arial';
 }
 
-h1 {text-align: center;}
+h1 {
+	text-align: center;
+}
+
+h2{
+	text-align: left;
+}
+
+
+li{
+	font-size: 0.92em;
+}
 
 .row {
   display: flex;
@@ -16,6 +28,7 @@ h1 {text-align: center;}
 	display:flex;
 	flex: 50%;
 	flex-direction: column;
+	flex_wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -24,9 +37,4 @@ h1 {text-align: center;}
   max-width: 100%
   display: flex;
   align-items:left;
-}
-
-
-li {
-  font-size: 0.92em;
 }
